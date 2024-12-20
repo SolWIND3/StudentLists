@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_x="114sp"
+        android:layout_y="146sp"
+        android:text="[Student Lists]"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/Delete"
+        android:layout_width="167sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12sp"
+        android:layout_x="220sp"
+        android:layout_y="556sp"
+        android:background="@drawable/button_bg"
+        android:text="DELETE"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ViewAll"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ViewAll"
+        app:layout_constraintTop_toBottomOf="@+id/ViewAll"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/studentID"
+        android:layout_width="354sp"
+        android:layout_height="46sp"
+        android:layout_marginTop="4sp"
+        android:layout_x="36sp"
+        android:layout_y="264sp"
+        android:autofillHints=""
+        android:hint="StudentID Ex. 2019-00078"
+        android:inputType="number"
+        android:maxLength="10"
+        android:textColor="@color/yellow"
+        android:textSize="20sp"
+        android:digits="1234567890-"
+        app:layout_constraintEnd_toEndOf="@+id/Name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Name"
+        app:layout_constraintTop_toBottomOf="@+id/Name"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/studentcourse"
+        android:layout_width="354sp"
+        android:layout_height="46sp"
+        android:layout_marginTop="4sp"
+        android:layout_x="36sp"
+        android:layout_y="370sp"
+        android:digits="1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ- "
+        android:hint="Course Ex.BSIT3A"
+        android:inputType="text"
+        android:textColor="@color/yellow"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/studentID"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/studentID"
+        app:layout_constraintTop_toBottomOf="@+id/studentID"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/Insert"
+        android:layout_width="167sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12sp"
+        android:layout_x="28sp"
+        android:layout_y="555sp"
+        android:background="@drawable/button_bg"
+        android:text="INSERT"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ViewAll"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/ViewAll"
+        app:layout_constraintTop_toBottomOf="@+id/ViewAll"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/studentGender"
+        android:layout_width="354sp"
+        android:layout_height="46sp"
+        android:layout_marginTop="4sp"
+        android:layout_x="234sp"
+        android:layout_y="470sp"
+        android:digits="FM"
+        android:hint="Gender M or F"
+        android:inputType="text"
+        android:maxLength="1"
+        android:textColor="@color/yellow"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/studentPhone"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/studentPhone"
+        app:layout_constraintTop_toBottomOf="@+id/studentPhone"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/studentAddress"
+        android:layout_width="354sp"
+        android:layout_height="46sp"
+        android:layout_marginTop="4sp"
+        android:layout_x="233sp"
+        android:layout_y="372sp"
+        android:hint="Address"
+        android:inputType="text"
+        android:textColor="@color/yellow"
+        android:textSize="20sp"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-., "
+        app:layout_constraintEnd_toEndOf="@+id/studentcourse"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/studentcourse"
+        app:layout_constraintTop_toBottomOf="@+id/studentcourse"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/studentPhone"
+        android:layout_width="354sp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4sp"
+        android:layout_x="37sp"
+        android:layout_y="472sp"
+        android:hint="Phone #"
+        android:inputType="number"
+        android:maxLength="11"
+        android:textColor="@color/yellow"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/studentAddress"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/studentAddress"
+        app:layout_constraintTop_toBottomOf="@+id/studentAddress" />
+
+    <Button
+        android:id="@+id/ViewAll"
+        android:layout_width="348sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_x="34sp"
+        android:layout_y="650sp"
+        android:background="@drawable/button_bg"
+        android:text="View All"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/studentGender"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="354sp"
+        android:layout_height="46sp"
+        android:layout_marginTop="16sp"
+        android:layout_x="228sp"
+        android:layout_y="264sp"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-., "
+        android:hint="Name"
+        android:inputType="text"
+        android:textColor="@color/yellow"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Created By SolWIND3"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/guideline9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="367dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="12dp"
+        android:text="To Delete, Enter StudentID from View All and press delete."
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="HardcodedText" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="87dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="466dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="630dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="716dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
