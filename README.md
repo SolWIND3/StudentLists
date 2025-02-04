@@ -1,0 +1,3 @@
+-Simple Student Database System 
+-Written in java
+-Developed on android studio
